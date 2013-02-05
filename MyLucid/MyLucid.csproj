@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{012833F2-DA07-496B-BB43-D38A2ABDC97A}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MyLucid</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>MyLucid</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchProfiling>True</MtouchProfiling>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchUseSGen>True</MtouchUseSGen>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchProfiling>True</MtouchProfiling>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <BuildIpa>True</BuildIpa>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="MonoTouch.Dialog-1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="FirstViewController.cs" />
+    <Compile Include="FirstViewController.designer.cs">
+      <DependentUpon>FirstViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movie.cs" />
+    <Compile Include="PlayViewController.cs" />
+    <Compile Include="PlayViewController.designer.cs">
+      <DependentUpon>PlayViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LucidCollectionViewController.cs" />
+    <Compile Include="LucidCollectionViewController.designer.cs">
+      <DependentUpon>LucidCollectionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoViewController.cs" />
+    <Compile Include="VideoViewController.designer.cs">
+      <DependentUpon>VideoViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendViewController.cs" />
+    <Compile Include="SendViewController.designer.cs">
+      <DependentUpon>SendViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplitViewController.cs" />
+    <Compile Include="SplitViewController.designer.cs">
+      <DependentUpon>SplitViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailViewController.cs" />
+    <Compile Include="DetailViewController.designer.cs">
+      <DependentUpon>DetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterViewController.cs" />
+    <Compile Include="MasterViewController.designer.cs">
+      <DependentUpon>MasterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SentEmailViewController.cs" />
+    <Compile Include="SentEmailViewController.designer.cs">
+      <DependentUpon>SentEmailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlaylistSplitViewController.cs" />
+    <Compile Include="PlaylistSplitViewController.designer.cs">
+      <DependentUpon>PlaylistSplitViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LucidVideoCollection.cs" />
+    <Compile Include="MainLayout.cs" />
+    <Compile Include="MyCollectionViewCell.cs" />
+    <Compile Include="MyCollectionViewCell.designer.cs">
+      <DependentUpon>MyCollectionViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LucidTableViewController.cs" />
+    <Compile Include="LucidTableViewController.designer.cs">
+      <DependentUpon>LucidTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LucidTableViewSource.cs" />
+    <Compile Include="LucidTableViewCell.cs" />
+    <Compile Include="LucidTableViewCell.designer.cs">
+      <DependentUpon>LucidTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabBarController.cs" />
+    <Compile Include="TabBarController.designer.cs">
+      <DependentUpon>TabBarController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Email.cs" />
+    <Compile Include="SentEmail.cs" />
+    <Compile Include="ComposeEmailController.cs" />
+    <Compile Include="ComposeEmailController.designer.cs">
+      <DependentUpon>ComposeEmailController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="MainStoryboard.storyboard" />
+    <InterfaceDefinition Include="LucidTabViewController.xib" />
+    <InterfaceDefinition Include="TabBarController.xib" />
+    <InterfaceDefinition Include="ComposeEmailController.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\first.png" />
+    <BundleResource Include="Resources\first%402x.png" />
+    <BundleResource Include="Resources\second.png" />
+    <BundleResource Include="Resources\second%402x.png" />
+    <BundleResource Include="Resources\CarpelTunnel.jpeg" />
+    <BundleResource Include="Resources\placeholder.jpg" />
+    <BundleResource Include="Resources\NervousSystem.jpg" />
+    <BundleResource Include="Resources\Adjustments.jpg" />
+    <BundleResource Include="Resources\FirstVisit.jpg" />
+    <BundleResource Include="Resources\Asthma.jpg" />
+    <BundleResource Include="Resources\TMJ.jpg" />
+    <BundleResource Include="Resources\Digestive.jpg" />
+    <BundleResource Include="Resources\Headaches.jpg" />
+    <BundleResource Include="Resources\MyLucid.entitlements" />
+    <BundleResource Include="Resources\Lucid72x72.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

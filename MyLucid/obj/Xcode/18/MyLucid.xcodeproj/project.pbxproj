@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B7186000000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72E5E800000000000000000 /* UIKit.framework */; };
+		53F7D5000000000000000000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB4AD800000000000000000 /* MapKit.framework */; };
+		1C7E24000000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 383AFC800000000000000000 /* Foundation.framework */; };
+		E50473000000000000000000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14B80000000000000000000 /* CoreGraphics.framework */; };
+		2C4CF6000000000000000000 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4809CE800000000000000000 /* MainStoryboard.storyboard */; };
+		F4D345000000000000000000 /* LucidTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10901D800000000000000000 /* LucidTabViewController.xib */; };
+		BD5994000000000000000000 /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9166C800000000000000000 /* TabBarController.xib */; };
+		85DFE3000000000000000000 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = A19CBB800000000000000000 /* first.png */; };
+		4E6632000000000000000000 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A230A800000000000000000 /* first@2x.png */; };
+		16EC81000000000000000000 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 32A959800000000000000000 /* second.png */; };
+		DF72D0000000000000000000 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB2FA8800000000000000000 /* second@2x.png */; };
+		A7F91F000000000000000000 /* CarpelTunnel.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C3B5F7800000000000000000 /* CarpelTunnel.jpeg */; };
+		707F6E000000000000000000 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C3C46800000000000000000 /* placeholder.jpg */; };
+		3905BD000000000000000000 /* NervousSystem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54C295800000000000000000 /* NervousSystem.jpg */; };
+		18C0C0000000000000000000 /* Adjustments.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1D48E4800000000000000000 /* Adjustments.jpg */; };
+		CA125B000000000000000000 /* FirstVisit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5CF33800000000000000000 /* FirstVisit.jpg */; };
+		9298AA000000000000000000 /* Asthma.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE5582800000000000000000 /* Asthma.jpg */; };
+		5B1EF9000000000000000000 /* TMJ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76DBD1800000000000000000 /* TMJ.jpg */; };
+		23A548000000000000000000 /* Digestive.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F6220800000000000000000 /* Digestive.jpg */; };
+		EC2B97000000000000000000 /* Headaches.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E86F8000000000000000000 /* Headaches.jpg */; };
+		B4B1E6000000000000000000 /* MyLucid.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = D06EBE800000000000000000 /* MyLucid.entitlements */; };
+		7D3835000000000000000000 /* Lucid72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 98F50D800000000000000000 /* Lucid72x72.png */; };
+		45BE84000000000000000000 /* ComposeEmailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 617B5C800000000000000000 /* ComposeEmailController.xib */; };
+		E44D30000000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 2A01AB800000000000000000 /* AppDelegate.h */; };
+		BB0E49800000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CB22000000000000000000 /* AppDelegate.m */; };
+		839498800000000000000000 /* FirstViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 9F5171000000000000000000 /* FirstViewController.h */; };
+		305E0F000000000000000000 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1AE7800000000000000000 /* FirstViewController.m */; };
+		F8E45E000000000000000000 /* PlayViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 14A136800000000000000000 /* PlayViewController.h */; };
+		A5ADD4800000000000000000 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16AAD000000000000000000 /* PlayViewController.m */; };
+		6E3423800000000000000000 /* LucidCollectionViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 89F0FC000000000000000000 /* LucidCollectionViewController.h */; };
+		1AFD9A000000000000000000 /* LucidCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BA72800000000000000000 /* LucidCollectionViewController.m */; };
+		E383E9000000000000000000 /* VideoViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = FF40C1800000000000000000 /* VideoViewController.h */; };
+		904D5F800000000000000000 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0A38000000000000000000 /* VideoViewController.m */; };
+		58D3AE800000000000000000 /* SendViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 749087000000000000000000 /* SendViewController.h */; };
+		59D250000000000000000000 /* SendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2159FD800000000000000000 /* SendViewController.m */; };
+		CE2374000000000000000000 /* SplitViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = E9E04C800000000000000000 /* SplitViewController.h */; };
+		7AECEA800000000000000000 /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A9C3000000000000000000 /* SplitViewController.m */; };
+		437339800000000000000000 /* DetailViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 5F3012000000000000000000 /* DetailViewController.h */; };
+		F03CB0000000000000000000 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9888000000000000000000 /* DetailViewController.m */; };
+		B8C2FF000000000000000000 /* MasterViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = D47FD7800000000000000000 /* MasterViewController.h */; };
+		658C75800000000000000000 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81494E000000000000000000 /* MasterViewController.m */; };
+		2E12C4800000000000000000 /* SentEmailViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 49CF9D000000000000000000 /* SentEmailViewController.h */; };
+		DADC3B000000000000000000 /* SentEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69913800000000000000000 /* SentEmailViewController.m */; };
+		A3628A000000000000000000 /* PlaylistSplitViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = BF1F62800000000000000000 /* PlaylistSplitViewController.h */; };
+		502C00800000000000000000 /* PlaylistSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE8D9000000000000000000 /* PlaylistSplitViewController.m */; };
+		18B24F800000000000000000 /* MyCollectionViewCell.h in Sources */ = {isa = PBXBuildFile; fileRef = 346F28000000000000000000 /* MyCollectionViewCell.h */; };
+		C57BC6000000000000000000 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1389E800000000000000000 /* MyCollectionViewCell.m */; };
+		8E0215000000000000000000 /* LucidTableViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = A9BEED800000000000000000 /* LucidTableViewController.h */; };
+		3ACB8B800000000000000000 /* LucidTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568864000000000000000000 /* LucidTableViewController.m */; };
+		351DA8000000000000000000 /* LucidTableViewCell.h in Sources */ = {isa = PBXBuildFile; fileRef = 1F0EB3000000000000000000 /* LucidTableViewCell.h */; };
+		B01B51000000000000000000 /* LucidTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD829800000000000000000 /* LucidTableViewCell.m */; };
+		78A1A0000000000000000000 /* TabBarController.h in Sources */ = {isa = PBXBuildFile; fileRef = 945E78800000000000000000 /* TabBarController.h */; };
+		256B16800000000000000000 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4127EF000000000000000000 /* TabBarController.m */; };
+		EDF165800000000000000000 /* ComposeEmailController.h in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3E0000000000000000000 /* ComposeEmailController.h */; };
+		9ABADC000000000000000000 /* ComposeEmailController.m in Sources */ = {isa = PBXBuildFile; fileRef = B677B4800000000000000000 /* ComposeEmailController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA64E8000000000000000000 /* MyLucid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "MyLucid.app"; path = "MyLucid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72E5E800000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
+		6FB4AD800000000000000000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; name = "MapKit.framework"; path = "System/Library/Frameworks/MapKit.framework"; sourceTree = SDKROOT; };
+		383AFC800000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		C14B80000000000000000000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		4809CE800000000000000000 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "MainStoryboard.storyboard"; path = "MainStoryboard.storyboard"; sourceTree = "<group>"; };
+		10901D800000000000000000 /* LucidTabViewController.xib */ = {isa = PBXFileReference; name = "LucidTabViewController.xib"; path = "LucidTabViewController.xib"; sourceTree = "<group>"; };
+		D9166C800000000000000000 /* TabBarController.xib */ = {isa = PBXFileReference; name = "TabBarController.xib"; path = "TabBarController.xib"; sourceTree = "<group>"; };
+		A19CBB800000000000000000 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "first.png"; path = "first.png"; sourceTree = "<group>"; };
+		6A230A800000000000000000 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "first@2x.png"; path = "first@2x.png"; sourceTree = "<group>"; };
+		32A959800000000000000000 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "second.png"; path = "second.png"; sourceTree = "<group>"; };
+		FB2FA8800000000000000000 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "second@2x.png"; path = "second@2x.png"; sourceTree = "<group>"; };
+		C3B5F7800000000000000000 /* CarpelTunnel.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "CarpelTunnel.jpeg"; path = "CarpelTunnel.jpeg"; sourceTree = "<group>"; };
+		8C3C46800000000000000000 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "placeholder.jpg"; path = "placeholder.jpg"; sourceTree = "<group>"; };
+		54C295800000000000000000 /* NervousSystem.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "NervousSystem.jpg"; path = "NervousSystem.jpg"; sourceTree = "<group>"; };
+		1D48E4800000000000000000 /* Adjustments.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Adjustments.jpg"; path = "Adjustments.jpg"; sourceTree = "<group>"; };
+		E5CF33800000000000000000 /* FirstVisit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "FirstVisit.jpg"; path = "FirstVisit.jpg"; sourceTree = "<group>"; };
+		AE5582800000000000000000 /* Asthma.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Asthma.jpg"; path = "Asthma.jpg"; sourceTree = "<group>"; };
+		76DBD1800000000000000000 /* TMJ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "TMJ.jpg"; path = "TMJ.jpg"; sourceTree = "<group>"; };
+		3F6220800000000000000000 /* Digestive.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Digestive.jpg"; path = "Digestive.jpg"; sourceTree = "<group>"; };
+		7E86F8000000000000000000 /* Headaches.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Headaches.jpg"; path = "Headaches.jpg"; sourceTree = "<group>"; };
+		D06EBE800000000000000000 /* MyLucid.entitlements */ = {isa = PBXFileReference; name = "MyLucid.entitlements"; path = "MyLucid.entitlements"; sourceTree = "<group>"; };
+		98F50D800000000000000000 /* Lucid72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Lucid72x72.png"; path = "Lucid72x72.png"; sourceTree = "<group>"; };
+		617B5C800000000000000000 /* ComposeEmailController.xib */ = {isa = PBXFileReference; name = "ComposeEmailController.xib"; path = "ComposeEmailController.xib"; sourceTree = "<group>"; };
+		2A01AB800000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		D6CB22000000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+		9F5171000000000000000000 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FirstViewController.h"; path = "FirstViewController.h"; sourceTree = "<group>"; };
+		4C1AE7800000000000000000 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "FirstViewController.m"; path = "FirstViewController.m"; sourceTree = "<group>"; };
+		14A136800000000000000000 /* PlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PlayViewController.h"; path = "PlayViewController.h"; sourceTree = "<group>"; };
+		C16AAD000000000000000000 /* PlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "PlayViewController.m"; path = "PlayViewController.m"; sourceTree = "<group>"; };
+		89F0FC000000000000000000 /* LucidCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LucidCollectionViewController.h"; path = "LucidCollectionViewController.h"; sourceTree = "<group>"; };
+		36BA72800000000000000000 /* LucidCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "LucidCollectionViewController.m"; path = "LucidCollectionViewController.m"; sourceTree = "<group>"; };
+		FF40C1800000000000000000 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VideoViewController.h"; path = "VideoViewController.h"; sourceTree = "<group>"; };
+		AC0A38000000000000000000 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "VideoViewController.m"; path = "VideoViewController.m"; sourceTree = "<group>"; };
+		749087000000000000000000 /* SendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SendViewController.h"; path = "SendViewController.h"; sourceTree = "<group>"; };
+		2159FD800000000000000000 /* SendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SendViewController.m"; path = "SendViewController.m"; sourceTree = "<group>"; };
+		E9E04C800000000000000000 /* SplitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SplitViewController.h"; path = "SplitViewController.h"; sourceTree = "<group>"; };
+		96A9C3000000000000000000 /* SplitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SplitViewController.m"; path = "SplitViewController.m"; sourceTree = "<group>"; };
+		5F3012000000000000000000 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DetailViewController.h"; path = "DetailViewController.h"; sourceTree = "<group>"; };
+		BF9888000000000000000000 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "DetailViewController.m"; path = "DetailViewController.m"; sourceTree = "<group>"; };
+		D47FD7800000000000000000 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MasterViewController.h"; path = "MasterViewController.h"; sourceTree = "<group>"; };
+		81494E000000000000000000 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "MasterViewController.m"; path = "MasterViewController.m"; sourceTree = "<group>"; };
+		49CF9D000000000000000000 /* SentEmailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SentEmailViewController.h"; path = "SentEmailViewController.h"; sourceTree = "<group>"; };
+		F69913800000000000000000 /* SentEmailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SentEmailViewController.m"; path = "SentEmailViewController.m"; sourceTree = "<group>"; };
+		BF1F62800000000000000000 /* PlaylistSplitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PlaylistSplitViewController.h"; path = "PlaylistSplitViewController.h"; sourceTree = "<group>"; };
+		6BE8D9000000000000000000 /* PlaylistSplitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "PlaylistSplitViewController.m"; path = "PlaylistSplitViewController.m"; sourceTree = "<group>"; };
+		346F28000000000000000000 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MyCollectionViewCell.h"; path = "MyCollectionViewCell.h"; sourceTree = "<group>"; };
+		E1389E800000000000000000 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "MyCollectionViewCell.m"; path = "MyCollectionViewCell.m"; sourceTree = "<group>"; };
+		A9BEED800000000000000000 /* LucidTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LucidTableViewController.h"; path = "LucidTableViewController.h"; sourceTree = "<group>"; };
+		568864000000000000000000 /* LucidTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "LucidTableViewController.m"; path = "LucidTableViewController.m"; sourceTree = "<group>"; };
+		1F0EB3000000000000000000 /* LucidTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LucidTableViewCell.h"; path = "LucidTableViewCell.h"; sourceTree = "<group>"; };
+		CBD829800000000000000000 /* LucidTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "LucidTableViewCell.m"; path = "LucidTableViewCell.m"; sourceTree = "<group>"; };
+		945E78800000000000000000 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TabBarController.h"; path = "TabBarController.h"; sourceTree = "<group>"; };
+		4127EF000000000000000000 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TabBarController.m"; path = "TabBarController.m"; sourceTree = "<group>"; };
+		9AE3E0000000000000000000 /* ComposeEmailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ComposeEmailController.h"; path = "ComposeEmailController.h"; sourceTree = "<group>"; };
+		B677B4800000000000000000 /* ComposeEmailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ComposeEmailController.m"; path = "ComposeEmailController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D9B71800000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B7186000000000000000000 /* UIKit.framework in Frameworks */,
+				53F7D5000000000000000000 /* MapKit.framework in Frameworks */,
+				1C7E24000000000000000000 /* Foundation.framework in Frameworks */,
+				E50473000000000000000000 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47F526000000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				12AC2C000000000000000000 /* MyLucid */,
+				E805D5800000000000000000 /* Frameworks */,
+				5929EE800000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5929EE800000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA64E8000000000000000000 /* MyLucid.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		E805D5800000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A72E5E800000000000000000 /* UIKit.framework */,
+				6FB4AD800000000000000000 /* MapKit.framework */,
+				383AFC800000000000000000 /* Foundation.framework */,
+				C14B80000000000000000000 /* CoreGraphics.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		12AC2C000000000000000000 /* MyLucid */ = {
+			isa = PBXGroup;
+			children = (
+				1D48E4800000000000000000 /* Adjustments.jpg */,
+				2A01AB800000000000000000 /* AppDelegate.h */,
+				AE5582800000000000000000 /* Asthma.jpg */,
+				C3B5F7800000000000000000 /* CarpelTunnel.jpeg */,
+				9AE3E0000000000000000000 /* ComposeEmailController.h */,
+				617B5C800000000000000000 /* ComposeEmailController.xib */,
+				5F3012000000000000000000 /* DetailViewController.h */,
+				3F6220800000000000000000 /* Digestive.jpg */,
+				A19CBB800000000000000000 /* first.png */,
+				6A230A800000000000000000 /* first@2x.png */,
+				9F5171000000000000000000 /* FirstViewController.h */,
+				E5CF33800000000000000000 /* FirstVisit.jpg */,
+				7E86F8000000000000000000 /* Headaches.jpg */,
+				98F50D800000000000000000 /* Lucid72x72.png */,
+				89F0FC000000000000000000 /* LucidCollectionViewController.h */,
+				1F0EB3000000000000000000 /* LucidTableViewCell.h */,
+				A9BEED800000000000000000 /* LucidTableViewController.h */,
+				10901D800000000000000000 /* LucidTabViewController.xib */,
+				4809CE800000000000000000 /* MainStoryboard.storyboard */,
+				D47FD7800000000000000000 /* MasterViewController.h */,
+				346F28000000000000000000 /* MyCollectionViewCell.h */,
+				D06EBE800000000000000000 /* MyLucid.entitlements */,
+				54C295800000000000000000 /* NervousSystem.jpg */,
+				8C3C46800000000000000000 /* placeholder.jpg */,
+				BF1F62800000000000000000 /* PlaylistSplitViewController.h */,
+				14A136800000000000000000 /* PlayViewController.h */,
+				32A959800000000000000000 /* second.png */,
+				FB2FA8800000000000000000 /* second@2x.png */,
+				749087000000000000000000 /* SendViewController.h */,
+				49CF9D000000000000000000 /* SentEmailViewController.h */,
+				E9E04C800000000000000000 /* SplitViewController.h */,
+				945E78800000000000000000 /* TabBarController.h */,
+				D9166C800000000000000000 /* TabBarController.xib */,
+				76DBD1800000000000000000 /* TMJ.jpg */,
+				FF40C1800000000000000000 /* VideoViewController.h */,
+				AD442D400000000000000000 /* Supporting Files */,
+			);
+			name = "MyLucid";
+			sourceTree = "<group>";
+		};
+		AD442D400000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6CB22000000000000000000 /* AppDelegate.m */,
+				B677B4800000000000000000 /* ComposeEmailController.m */,
+				BF9888000000000000000000 /* DetailViewController.m */,
+				4C1AE7800000000000000000 /* FirstViewController.m */,
+				36BA72800000000000000000 /* LucidCollectionViewController.m */,
+				CBD829800000000000000000 /* LucidTableViewCell.m */,
+				568864000000000000000000 /* LucidTableViewController.m */,
+				81494E000000000000000000 /* MasterViewController.m */,
+				E1389E800000000000000000 /* MyCollectionViewCell.m */,
+				6BE8D9000000000000000000 /* PlaylistSplitViewController.m */,
+				C16AAD000000000000000000 /* PlayViewController.m */,
+				2159FD800000000000000000 /* SendViewController.m */,
+				F69913800000000000000000 /* SentEmailViewController.m */,
+				96A9C3000000000000000000 /* SplitViewController.m */,
+				4127EF000000000000000000 /* TabBarController.m */,
+				AC0A38000000000000000000 /* VideoViewController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BF403400000000000000000 /* MyLucid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF4394000000000000000000 /* Build configuration list for PBXNativeTarget "MyLucid" */;
+			buildPhases = (
+				1621C0800000000000000000 /* Sources */,
+				4D9B71800000000000000000 /* Frameworks */,
+				31DE99000000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MyLucid";
+			productName = "MyLucid";
+			productReference = FA64E8000000000000000000 /* MyLucid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEB46E000000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = { };
+			buildConfigurationList = 3C04B2C00000000000000000 /* Build configuration list for PBXProject "MyLucid" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 47F526000000000000000000;
+			productRefGroup = 5929EE800000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BF403400000000000000000 /* MyLucid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31DE99000000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4CF6000000000000000000 /* MainStoryboard.storyboard in Resources */,
+				F4D345000000000000000000 /* LucidTabViewController.xib in Resources */,
+				BD5994000000000000000000 /* TabBarController.xib in Resources */,
+				85DFE3000000000000000000 /* first.png in Resources */,
+				4E6632000000000000000000 /* first@2x.png in Resources */,
+				16EC81000000000000000000 /* second.png in Resources */,
+				DF72D0000000000000000000 /* second@2x.png in Resources */,
+				A7F91F000000000000000000 /* CarpelTunnel.jpeg in Resources */,
+				707F6E000000000000000000 /* placeholder.jpg in Resources */,
+				3905BD000000000000000000 /* NervousSystem.jpg in Resources */,
+				18C0C0000000000000000000 /* Adjustments.jpg in Resources */,
+				CA125B000000000000000000 /* FirstVisit.jpg in Resources */,
+				9298AA000000000000000000 /* Asthma.jpg in Resources */,
+				5B1EF9000000000000000000 /* TMJ.jpg in Resources */,
+				23A548000000000000000000 /* Digestive.jpg in Resources */,
+				EC2B97000000000000000000 /* Headaches.jpg in Resources */,
+				B4B1E6000000000000000000 /* MyLucid.entitlements in Resources */,
+				7D3835000000000000000000 /* Lucid72x72.png in Resources */,
+				45BE84000000000000000000 /* ComposeEmailController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1621C0800000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E44D30000000000000000000 /* AppDelegate.h in Sources */,
+				BB0E49800000000000000000 /* AppDelegate.m in Sources */,
+				839498800000000000000000 /* FirstViewController.h in Sources */,
+				305E0F000000000000000000 /* FirstViewController.m in Sources */,
+				F8E45E000000000000000000 /* PlayViewController.h in Sources */,
+				A5ADD4800000000000000000 /* PlayViewController.m in Sources */,
+				6E3423800000000000000000 /* LucidCollectionViewController.h in Sources */,
+				1AFD9A000000000000000000 /* LucidCollectionViewController.m in Sources */,
+				E383E9000000000000000000 /* VideoViewController.h in Sources */,
+				904D5F800000000000000000 /* VideoViewController.m in Sources */,
+				58D3AE800000000000000000 /* SendViewController.h in Sources */,
+				59D250000000000000000000 /* SendViewController.m in Sources */,
+				CE2374000000000000000000 /* SplitViewController.h in Sources */,
+				7AECEA800000000000000000 /* SplitViewController.m in Sources */,
+				437339800000000000000000 /* DetailViewController.h in Sources */,
+				F03CB0000000000000000000 /* DetailViewController.m in Sources */,
+				B8C2FF000000000000000000 /* MasterViewController.h in Sources */,
+				658C75800000000000000000 /* MasterViewController.m in Sources */,
+				2E12C4800000000000000000 /* SentEmailViewController.h in Sources */,
+				DADC3B000000000000000000 /* SentEmailViewController.m in Sources */,
+				A3628A000000000000000000 /* PlaylistSplitViewController.h in Sources */,
+				502C00800000000000000000 /* PlaylistSplitViewController.m in Sources */,
+				18B24F800000000000000000 /* MyCollectionViewCell.h in Sources */,
+				C57BC6000000000000000000 /* MyCollectionViewCell.m in Sources */,
+				8E0215000000000000000000 /* LucidTableViewController.h in Sources */,
+				3ACB8B800000000000000000 /* LucidTableViewController.m in Sources */,
+				351DA8000000000000000000 /* LucidTableViewCell.h in Sources */,
+				B01B51000000000000000000 /* LucidTableViewCell.m in Sources */,
+				78A1A0000000000000000000 /* TabBarController.h in Sources */,
+				256B16800000000000000000 /* TabBarController.m in Sources */,
+				EDF165800000000000000000 /* ComposeEmailController.h in Sources */,
+				9ABADC000000000000000000 /* ComposeEmailController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2EB37000000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = MonoTouch;
+		};
+		DEA80F800000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "MyLucid";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoTouch;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C04B2C00000000000000000 /* Build configuration list for PBXProject "MyLucid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2EB37000000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+		DF4394000000000000000000 /* Build configuration list for PBXNativeTarget "MyLucid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA80F800000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEB46E000000000000000000 /* Project object */;
+}

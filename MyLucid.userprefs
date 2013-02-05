@@ -1,0 +1,54 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyLucid/LucidTableViewController.cs">
+    <Files>
+      <File FileName="MyLucid/AppDelegate.cs" Line="5" Column="28" />
+      <File FileName="MyLucid/Main.cs" Line="21" Column="1" />
+      <File FileName="MyLucid/FirstViewController.cs" Line="1" Column="1" />
+      <File FileName="MyLucid/Movie.cs" Line="1" Column="14" />
+      <File FileName="MyLucid/LucidCollectionViewController.cs" Line="44" Column="2" />
+      <File FileName="MyLucid/PlayViewController.cs" Line="1" Column="1" />
+      <File FileName="MyLucid/VideoViewController.cs" Line="62" Column="7" />
+      <File FileName="MyLucid/SendViewController.cs" Line="10" Column="19" />
+      <File FileName="MyLucid/SplitViewController.cs" Line="41" Column="1" />
+      <File FileName="MyLucid/DetailViewController.cs" Line="32" Column="3" />
+      <File FileName="MyLucid/MasterViewController.cs" Line="14" Column="4" />
+      <File FileName="MyLucid/SendViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="MyLucid/DetailViewController.designer.cs" Line="18" Column="4" />
+      <File FileName="MyLucid/SentEmailViewController.cs" Line="32" Column="5" />
+      <File FileName="MyLucid/SentEmailViewController.designer.cs" Line="17" Column="2" />
+      <File FileName="MyLucid/LucidCollectionViewController.designer.cs" Line="14" Column="11" />
+      <File FileName="MyLucid/PlaylistSplitViewController.cs" Line="29" Column="1" />
+      <File FileName="MyLucid/LucidVideoCollection.cs" Line="47" Column="1" />
+      <File FileName="MyLucid/MyCollectionViewCell.cs" Line="16" Column="1" />
+      <File FileName="MyLucid/MainLayout.cs" Line="14" Column="36" />
+      <File FileName="MyLucid/LucidTableViewController.cs" Line="30" Column="28" />
+      <File FileName="MyLucid/LucidTableViewSource.cs" Line="21" Column="24" />
+      <File FileName="MyLucid/LucidTableViewCell.cs" Line="12" Column="40" />
+      <File FileName="MyLucid/TabBarController.cs" Line="15" Column="3" />
+      <File FileName="MyLucid/LucidTableViewCell.designer.cs" Line="13" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="MyLucid" expanded="True">
+            <Node name="DetailViewController.cs" expanded="True" />
+            <Node name="LucidCollectionViewController.cs" expanded="True" />
+            <Node name="LucidTableViewCell.cs" expanded="True" />
+            <Node name="LucidTableViewController.cs" selected="True" />
+            <Node name="MyCollectionViewCell.cs" expanded="True" />
+            <Node name="SentEmailViewController.cs" expanded="True" />
+            <Node name="VideoViewController.cs" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MyLucid>
+    <ProfileHeapShotSettings_27CDebug Output="/var/folders/x2/tn6bcrxn5w7dlk8_5w2l1qfr0000gn/T/profiler-output.mlpd" Zip="True" HeapshotMode="ondemand" HeapshotGCInterval="1" HeapshotTimeInterval="1000" Calls="False" Alloc="False" CallDepth="100" StatisticalSampling="False" SampingFrequency="1000" MaxFrames="8" Mode="Advanced" />
+  </MonoDevelop.Ide.ItemProperties.MyLucid>
+</Properties>
