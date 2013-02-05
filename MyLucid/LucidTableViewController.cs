@@ -20,6 +20,7 @@ namespace MyLucid
 			this.TabBarItem.Image = UIImage.FromBundle ("second");
 			_content.Add("Shit");
 			_content.Add("Fuck");
+			_content.Add("Pussy");
 		}
 		
 		public override void DidReceiveMemoryWarning ()

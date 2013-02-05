@@ -150,8 +150,6 @@
     <Compile Include="TabBarController.designer.cs">
       <DependentUpon>TabBarController.cs</DependentUpon>
     </Compile>
-    <Compile Include="Email.cs" />
-    <Compile Include="SentEmail.cs" />
     <Compile Include="ComposeEmailController.cs" />
     <Compile Include="ComposeEmailController.designer.cs">
       <DependentUpon>ComposeEmailController.cs</DependentUpon>
