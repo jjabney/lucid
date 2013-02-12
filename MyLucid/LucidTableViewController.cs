@@ -38,6 +38,7 @@ namespace MyLucid
 		{
 			base.ViewDidLoad ();
 			base.TableView.Source = new LucidTableSource(_content);
+		
 		   NextButton.Clicked += OnNext;
 			// Perform any additional setup after loading the view, typically from a nib.
 		}
@@ -45,13 +46,16 @@ namespace MyLucid
 	
 		void OnNext (object sender, EventArgs e)
 		{
-			if(_mailController == null)
-			{
-				_mailController  = new MFMailComposeViewController();
-			}
-		
-			_mailController.SetMessageBody("<br /><br /><br /><br /><br /><br />Video<br />Video<br />Video<br />",true);
+			_mailController  = new MFMailComposeViewController();
+			_mailController.Finished += OnFinished;
+			_mailController.SetMessageBody("<br /><br /><br /><br /><br /><video width='320' height='240' controls><source src='http://progressive.iplayerhd.com/data/0/60ca7be0.mp4' type='video/mp4'></video>",true);
 			this.PresentViewController(_mailController,true,null);
+		}
+
+		void OnFinished (object sender, MFComposeResultEventArgs e)
+		{
+	
+			e.Controller.DismissModalViewControllerAnimated (true); 
 		}
 	}
 }
