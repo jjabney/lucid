@@ -4,6 +4,7 @@ using System.Drawing;
 
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using MonoTouch.Dialog;
 
 namespace MyLucid
 {
@@ -26,6 +27,10 @@ namespace MyLucid
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
+			new StringElement(
+				"Click me",
+				() => { new UIAlertView("Tapped", "String Element Tapped"
+				                        , null, "ok", null).Show(); });
 			
 			// Perform any additional setup after loading the view, typically from a nib.
 		}

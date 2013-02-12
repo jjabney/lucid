@@ -20,7 +20,7 @@ namespace MyLucid
 			LucidTableViewCell cell = tableView.DequeueReusableCell (cellIdentifier) as LucidTableViewCell;
 			cell.titleLabel.Text = tableItems[indexPath.Row];
 		
-			return cell;
+		return cell;
 		}
 	   	
 		public override bool CanEditRow (UITableView tableView, MonoTouch.Foundation.NSIndexPath indexPath)

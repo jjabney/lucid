@@ -21,6 +21,7 @@ namespace MyLucid
 			_content.Add("Shit");
 			_content.Add("Fuck");
 			_content.Add("Pussy");
+
 		}
 		
 		public override void DidReceiveMemoryWarning ()

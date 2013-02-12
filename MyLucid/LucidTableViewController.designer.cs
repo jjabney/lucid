@@ -12,10 +12,18 @@ namespace MyLucid
 	partial class LucidTableViewController
 	{
 		[Outlet]
+		MonoTouch.UIKit.UIButton NextButton { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UISearchBar searchBar { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (NextButton != null) {
+				NextButton.Dispose ();
+				NextButton = null;
+			}
+
 			if (searchBar != null) {
 				searchBar.Dispose ();
 				searchBar = null;
