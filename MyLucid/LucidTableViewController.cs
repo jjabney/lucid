@@ -6,6 +6,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using System.Collections.Generic;
 using MonoTouch.AddressBook;
+using MonoTouch.MessageUI;
 
 namespace MyLucid
 {
@@ -13,6 +14,7 @@ namespace MyLucid
 	{
 
 		private List<String> _content = new List<string>();
+		MFMailComposeViewController _mailController = null;
 
 		public LucidTableViewController (IntPtr handle) : base(handle)
 		{
@@ -36,11 +38,21 @@ namespace MyLucid
 		{
 			base.ViewDidLoad ();
 			base.TableView.Source = new LucidTableSource(_content);
-		
+		   NextButton.Clicked += OnNext;
 			// Perform any additional setup after loading the view, typically from a nib.
 		}
 
 	
+		void OnNext (object sender, EventArgs e)
+		{
+			if(_mailController == null)
+			{
+				_mailController  = new MFMailComposeViewController();
+			}
+		
+			_mailController.SetMessageBody("<br /><br /><br /><br /><br /><br />Video<br />Video<br />Video<br />",true);
+			this.PresentViewController(_mailController,true,null);
+		}
 	}
 }
 

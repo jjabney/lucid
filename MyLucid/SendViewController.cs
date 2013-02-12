@@ -5,11 +5,14 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using MonoTouch.Dialog;
+using MonoTouch.MessageUI;
 
 namespace MyLucid
 {
 	public partial class SendViewController : UIViewController
 	{
+		MFMailComposeViewController _mailController = null;
+
 		public SendViewController (IntPtr handle) : base (handle)
 		{
 			this.Title = NSBundle.MainBundle.LocalizedString ("Send", "Send");
@@ -27,10 +30,10 @@ namespace MyLucid
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			new StringElement(
-				"Click me",
-				() => { new UIAlertView("Tapped", "String Element Tapped"
-				                        , null, "ok", null).Show(); });
+	
+			_mailController = new MFMailComposeViewController();
+
+			this.PresentViewController(_mailController,true,null);
 			
 			// Perform any additional setup after loading the view, typically from a nib.
 		}

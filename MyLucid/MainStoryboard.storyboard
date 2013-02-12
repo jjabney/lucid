@@ -62,27 +62,45 @@
             </objects>
             <point key="canvasLocation" x="-9514" y="-4291"/>
         </scene>
-        <!--Lucid Table View Controller - Root View Controller-->
+        <!--Lucid Table View Controller-->
         <scene sceneID="uuf-ol-KT7">
             <objects>
                 <tableViewController id="xKX-WH-dgH" customClass="LucidTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="T2q-YI-LQ1">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="T2q-YI-LQ1">
                         <rect key="frame" x="0.0" y="64" width="768" height="911"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="checkmark" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableCell" id="20h-rt-GjW">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableCell" id="20h-rt-GjW" customClass="LucidTableViewCell">
                                 <rect key="frame" x="0.0" y="22" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="748" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ciD-9s-8Av">
+                                            <rect key="frame" x="131" y="11" width="342" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <outlet property="TitleLabel" destination="ciD-9s-8Av" id="VGt-wS-4yG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="aNM-Gp-LAl"/>
+                    <navigationItem key="navigationItem" id="aNM-Gp-LAl">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="RrO-bM-V9U"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <connections>
+                        <outlet property="NextButton" destination="RrO-bM-V9U" id="wwW-Zw-Iac"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOX-4j-OPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,11 +249,16 @@
                 <relationship kind="outlet" name="videoFilteringSegmentedControl" candidateClass="UISegmentedControl"/>
             </relationships>
         </class>
+        <class className="LucidTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LucidTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="TitleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="LucidTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LucidTableViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="NextButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="NextButton" candidateClass="UIBarButtonItem"/>
             </relationships>
         </class>
         <class className="MyCollectionViewCell" superclassName="UICollectionViewCell">

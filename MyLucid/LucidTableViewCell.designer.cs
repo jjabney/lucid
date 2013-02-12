@@ -12,13 +12,13 @@ namespace MyLucid
 	partial class LucidTableViewCell
 	{
 		[Outlet]
-		public MonoTouch.UIKit.UILabel titleLabel { get; set; }
+		public MonoTouch.UIKit.UILabel TitleLabel { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (titleLabel != null) {
-				titleLabel.Dispose ();
-				titleLabel = null;
+			if (TitleLabel != null) {
+				TitleLabel.Dispose ();
+				TitleLabel = null;
 			}
 		}
 	}

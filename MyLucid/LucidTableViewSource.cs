@@ -18,7 +18,7 @@ namespace MyLucid
 		public override UITableViewCell GetCell (UITableView tableView, MonoTouch.Foundation.NSIndexPath indexPath)
 		{
 			LucidTableViewCell cell = tableView.DequeueReusableCell (cellIdentifier) as LucidTableViewCell;
-			cell.titleLabel.Text = tableItems[indexPath.Row];
+			cell.TitleLabel.Text = tableItems[indexPath.Row];
 		
 		return cell;
 		}
