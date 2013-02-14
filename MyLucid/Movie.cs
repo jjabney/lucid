@@ -7,40 +7,9 @@ using System.Collections.Generic;
 
 namespace MyLucid
 {
-	public class Movie 
+	public class Movie : LucidContent
 	{
-		public string Title {
-			get;
-			set;
-		}
 
-		public string Image {
-			get;
-			set;
-		}
-		public string Url {
-			get;
-			set;
-		}
-		public string SubTitle {
-			get;
-			set;
-		}
-
-		public bool IsFavorite {
-			get;
-			set;
-		}
-
-		public bool IsPopular {
-			get;
-			set;
-		}
-
-		public int TotalViews{
-			get;
-			set;
-		}
 	}
 
 }

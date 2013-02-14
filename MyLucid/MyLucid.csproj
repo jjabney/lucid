@@ -123,16 +123,11 @@
     <Compile Include="MasterViewController.designer.cs">
       <DependentUpon>MasterViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="SentEmailViewController.cs" />
-    <Compile Include="SentEmailViewController.designer.cs">
-      <DependentUpon>SentEmailViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="PlaylistSplitViewController.cs" />
     <Compile Include="PlaylistSplitViewController.designer.cs">
       <DependentUpon>PlaylistSplitViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="LucidVideoCollection.cs" />
-    <Compile Include="MainLayout.cs" />
     <Compile Include="MyCollectionViewCell.cs" />
     <Compile Include="MyCollectionViewCell.designer.cs">
       <DependentUpon>MyCollectionViewCell.cs</DependentUpon>
@@ -146,20 +141,19 @@
     <Compile Include="LucidTableViewCell.designer.cs">
       <DependentUpon>LucidTableViewCell.cs</DependentUpon>
     </Compile>
-    <Compile Include="TabBarController.cs" />
-    <Compile Include="TabBarController.designer.cs">
-      <DependentUpon>TabBarController.cs</DependentUpon>
-    </Compile>
     <Compile Include="ComposeEmailController.cs" />
     <Compile Include="ComposeEmailController.designer.cs">
       <DependentUpon>ComposeEmailController.cs</DependentUpon>
     </Compile>
+    <Compile Include="HtmlBuilder.cs" />
+    <Compile Include="LucidContent.cs" />
+    <Compile Include="TabBarController.cs" />
+    <Compile Include="TabBarController.designer.cs">
+      <DependentUpon>TabBarController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />
-    <InterfaceDefinition Include="LucidTabViewController.xib" />
-    <InterfaceDefinition Include="TabBarController.xib" />
-    <InterfaceDefinition Include="ComposeEmailController.xib" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\first.png" />

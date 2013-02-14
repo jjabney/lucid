@@ -1,56 +1,43 @@
 ﻿<Properties GitUserInfo="UsingMD">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyLucid/LucidTableViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyLucid/PlaylistSplitViewController.cs">
     <Files>
       <File FileName="MyLucid/AppDelegate.cs" Line="5" Column="28" />
       <File FileName="MyLucid/Main.cs" Line="21" Column="1" />
       <File FileName="MyLucid/FirstViewController.cs" Line="1" Column="1" />
-      <File FileName="MyLucid/Movie.cs" Line="1" Column="14" />
+      <File FileName="MyLucid/Movie.cs" Line="12" Column="3" />
       <File FileName="MyLucid/LucidCollectionViewController.cs" Line="44" Column="2" />
       <File FileName="MyLucid/PlayViewController.cs" Line="1" Column="1" />
       <File FileName="MyLucid/VideoViewController.cs" Line="62" Column="7" />
-      <File FileName="MyLucid/SendViewController.cs" Line="11" Column="60" />
+      <File FileName="MyLucid/SendViewController.cs" Line="11" Column="2" />
       <File FileName="MyLucid/SplitViewController.cs" Line="41" Column="1" />
       <File FileName="MyLucid/DetailViewController.cs" Line="32" Column="3" />
       <File FileName="MyLucid/MasterViewController.cs" Line="14" Column="4" />
       <File FileName="MyLucid/SendViewController.designer.cs" Line="1" Column="1" />
       <File FileName="MyLucid/DetailViewController.designer.cs" Line="18" Column="4" />
-      <File FileName="MyLucid/SentEmailViewController.cs" Line="32" Column="5" />
-      <File FileName="MyLucid/SentEmailViewController.designer.cs" Line="17" Column="2" />
       <File FileName="MyLucid/LucidCollectionViewController.designer.cs" Line="14" Column="11" />
-      <File FileName="MyLucid/PlaylistSplitViewController.cs" Line="29" Column="1" />
-      <File FileName="MyLucid/LucidVideoCollection.cs" Line="47" Column="1" />
+      <File FileName="MyLucid/PlaylistSplitViewController.cs" Line="33" Column="3" />
+      <File FileName="MyLucid/LucidVideoCollection.cs" Line="12" Column="24" />
       <File FileName="MyLucid/MyCollectionViewCell.cs" Line="16" Column="1" />
-      <File FileName="MyLucid/MainLayout.cs" Line="14" Column="36" />
-      <File FileName="MyLucid/LucidTableViewController.cs" Line="21" Column="16" />
-      <File FileName="MyLucid/LucidTableViewSource.cs" Line="21" Column="24" />
-      <File FileName="MyLucid/LucidTableViewCell.cs" Line="12" Column="40" />
-      <File FileName="MyLucid/TabBarController.cs" Line="15" Column="3" />
+      <File FileName="MyLucid/LucidTableViewController.cs" Line="66" Column="4" />
+      <File FileName="MyLucid/LucidTableViewSource.cs" Line="22" Column="13" />
+      <File FileName="MyLucid/LucidTableViewCell.cs" Line="10" Column="2" />
       <File FileName="MyLucid/LucidTableViewCell.designer.cs" Line="13" Column="3" />
       <File FileName="MyLucid/LucidTableViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="MyLucid/LucidContent.cs" Line="43" Column="4" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="MyLucid" expanded="True">
-            <Node name="DetailViewController.cs" expanded="True" />
-            <Node name="LucidCollectionViewController.cs" selected="True" />
-            <Node name="LucidTableViewCell.cs" expanded="True" />
-            <Node name="LucidTableViewController.cs" expanded="True" />
-            <Node name="MyCollectionViewCell.cs" expanded="True" />
-            <Node name="SentEmailViewController.cs" expanded="True" />
-            <Node name="VideoViewController.cs" expanded="True" />
+            <Node name="PlaylistSplitViewController.cs" selected="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/jamesabney/lucid/MyLucid/LucidTableViewController.cs" line="41" />
-      <Breakpoint file="/Users/jamesabney/lucid/MyLucid/LucidTableViewController.cs" line="19" />
-      <Breakpoint file="/Users/jamesabney/lucid/MyLucid/LucidTableViewController.cs" line="37" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.MyLucid>

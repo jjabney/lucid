@@ -13,12 +13,20 @@ namespace MyLucid
 	{
 		[Outlet]
 		public MonoTouch.UIKit.UILabel TitleLabel { get; set; }
+
+		[Outlet]
+		public MonoTouch.UIKit.UIImageView UIImageView { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
 			if (TitleLabel != null) {
 				TitleLabel.Dispose ();
 				TitleLabel = null;
+			}
+
+			if (UIImageView != null) {
+				UIImageView.Dispose ();
+				UIImageView = null;
 			}
 		}
 	}

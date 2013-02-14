@@ -11,6 +11,7 @@ namespace MyLucid
 	[Register ("TabBarController")]
 	partial class TabBarController
 	{
+		
 		void ReleaseDesignerOutlets ()
 		{
 		}

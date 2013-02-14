@@ -1,26 +1,28 @@
 using System;
 using MonoTouch.UIKit;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace MyLucid
 {
 	public class LucidTableSource : UITableViewSource {
-		List<String> tableItems;
+
 		string cellIdentifier = "TableCell";
-		public LucidTableSource (List<String> items)
+		public LucidTableSource (List<LucidContent> items)
 		{
-			tableItems = items;
+			TableItems = items;
 		}
 		public override int RowsInSection (UITableView tableview, int section)
 		{
-			return tableItems.Count;
+			return TableItems.Count;
 		}
 		public override UITableViewCell GetCell (UITableView tableView, MonoTouch.Foundation.NSIndexPath indexPath)
 		{
 			LucidTableViewCell cell = tableView.DequeueReusableCell (cellIdentifier) as LucidTableViewCell;
-			cell.TitleLabel.Text = tableItems[indexPath.Row];
-		
-		return cell;
+			LucidContent content = TableItems[indexPath.Row];
+			cell.TitleLabel.Text = content.Title;
+			cell.UIImageView.Image = UIImage.FromFile(content.Image);
+			return cell;
 		}
 	   	
 		public override bool CanEditRow (UITableView tableView, MonoTouch.Foundation.NSIndexPath indexPath)
@@ -33,15 +35,13 @@ namespace MyLucid
 			return false;
 		}
 
-		public override void RowSelected (UITableView tableView, MonoTouch.Foundation.NSIndexPath indexPath)
+		public List<LucidContent> TableItems 
 		{
-			Console.WriteLine("Row Selected");
+			get;
+			set;
 		}
-
-		public override void RowDeselected (UITableView tableView, MonoTouch.Foundation.NSIndexPath indexPath)
-		{
-			Console.WriteLine("Row Deselected");
-		}
+	
+	
 	}
 }
 
